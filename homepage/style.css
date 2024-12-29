@@ -1,0 +1,137 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    background-color: #a9a9a9;
+}
+
+body {
+    width: 90%;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1, h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #2a2a2a;
+  }
+  
+p, li, span {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #2a2a2a;
+}
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+    flex: 5;
+    text-transform: uppercase;
+}
+  
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+p, li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+header {
+    position: relative; /* Ensures the header becomes a positioning context */
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start; /* Ensures child elements align at the top */
+}
+
+header img {
+    position: absolute; /* Changes the positioning to absolute */
+    top: 50px; /* Aligns the image at the top */
+    right: 10px; /* Aligns the image to the right */
+    display: block;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+main, header, nav, article, aside, footer, section {
+    background-color: rgba(0,255,0,0.5);
+    padding: 1%;
+}
+nav {
+    height: 50px;
+    flex: 100%;
+    display: flex;
+}
+  
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+}
+  
+nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+nav a, nav span {
+    display: inline-block;
+    font-size: 2rem;
+    height: 3rem;
+    line-height: 1.7;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+  
+}
+main {
+    display: flex;
+  }
+  
+article, section {
+    flex: 4;
+    line-height: 1.5;
+}
+  
+aside {
+    flex: 2.5;
+    margin-left: 10px;
+    padding: 1%;
+}
+  
+aside img {
+    display: block;
+    float: left;
+    width: 50%;
+}
+  
+footer {
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p, li {
+        font-size: 1.4rem;
+    }
+    nav, ul {
+        flex-direction: row;
+        text-align: center;
+    }
+    aside {
+        flex: 3;
+    }
+}
