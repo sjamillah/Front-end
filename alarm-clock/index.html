@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <img src="assets/clock.png" alt="alarm clock picture"/>
+        <h1 id="time">00:00:00 AM</h1>
+        <div id="alarm">
+           <select>
+            <option value="Hours" selected disabled hidden>Hour</option>
+           </select>
+           <select>
+            <option value="Minutes" selected disabled hidden>Minutes</option>
+           </select>
+           <select>
+            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+           </select>
+        </div>
+        <button type="click" id="button">Set Alarm</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
